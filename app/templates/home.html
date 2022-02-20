@@ -1,0 +1,37 @@
+{% extends "base.html" %}
+
+{% block title %}
+Banyan Thai Massage Marbella
+{% endblock %}
+
+{% block css %}
+<link rel="stylesheet" href="{{ url_for('static', filename = 'home.css') }}">
+{% endblock %}
+
+{% block homeLink %}
+<a class="nav-link active" href="{{ url_for('base.home') }}">Home</a>
+{% endblock %}
+
+{% block boardLinks %}
+<li class="nav-item">
+	<a class="nav-link" href="#">Massages</a>
+</li>
+<li class="nav-item">
+	<a class="nav-link" href="#">Meet Hla Hla</a>
+</li>
+{% endblock %}
+
+{% block body %}
+<div class="container text-center" style="padding: 1rem;">
+<div class="jumbotron">
+	<h1 class="display-4">Welcome to Banyan Thai Massage Marbella</h1>
+	<p class="lead">Live The Thai Way</p>
+	<hr class="my-4">
+	<p class="lead">
+	  <a class="btn btn-primary btn-lg" href="https://warwick.ac.uk/fac/sci/wmg/" role="button">Learn more about massages</a>
+	</p>
+</div>
+</div>
+{% endblock %}
+
+
